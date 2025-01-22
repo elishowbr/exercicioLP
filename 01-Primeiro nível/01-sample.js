@@ -1,13 +1,13 @@
-function h(a) {
-    let b = [];
-    for (let i = 0; i < a.length; i++) {
-        if (a[i] % 2 === 0) {
-            b.push(a[i]);
+function listarPares(sequenciaNumerica) {
+    const listaPares = [];
+    for (let i = 0; i < sequenciaNumerica.length; i++) {
+        if (sequenciaNumerica[i] % 2 === 0) {
+            listaPares.push(sequenciaNumerica[i]);
         }
     }
-    return b;
+    return listaPares;
 }
 
-let x = [1, 2, 3, 4, 5, 6];
-let y = h(x);
-console.log(y);
+let conjunto = [1, 2, 3, 4, 5, 6];
+let listaNova = listarPares(conjunto);
+console.log(listaNova);
